@@ -1,0 +1,36 @@
+# Byte-compiled / cache files
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtualenv
+.env
+.env.*
+.venv/
+poetry.lock
+
+# Tests and coverage
+.coverage
+htmlcov/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Editor config
+.vscode/
+.idea/
+*.swp
+
+# Poetry virtual environment (only if created inside the project)
+.venv/
+
+# Lock file (optional but usually **should be committed**)
+# poetry.lock
+

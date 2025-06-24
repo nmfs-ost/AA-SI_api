@@ -1,0 +1,26 @@
+[project]
+name = "aa-si-api-server"
+version = "0.1.0"
+description = "API Server for querying Fisheries GCP active acoustic data."
+authors = [
+    {name = "Your Name",email = "you@example.com"}
+]
+license = {text = "Apache 2.0"}
+readme = "README.md"
+requires-python = "3.13.3"
+dependencies = [
+    "flask (>=3.1.1,<4.0.0)",
+    "python-dotenv (>=1.1.1,<2.0.0)",
+]
+
+[tool.poetry]
+packages = [
+    { include = "aa_si_api_server", from = "src" }
+]
+
+[tool.poetry.scripts]
+start = "aa_si_api_server.server:main"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
