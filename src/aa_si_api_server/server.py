@@ -3,7 +3,6 @@ from flask import Flask
 from dotenv import load_dotenv
 import os
 from aa_si_api_server.routes.main import bp
-# import aalibrary
 
 # Entrypoint for running server
 def main():
