@@ -25,7 +25,7 @@ def create_server():
     server = Flask(__name__)
     env = os.getenv("APP_ENV", "production")
     set_config(server, env)
-    print("new test secret: " + server.config.get("SECRET"))
+    # print("new test secret: " + server.config.get("SECRET"))
     server.register_blueprint(bp)
     return server
 
